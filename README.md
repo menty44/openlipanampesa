@@ -88,7 +88,7 @@ triggers a pop up on your client's mobile phone to complete the payment.
 
 # Installation
 
-Installing Project Mulla is easy and straight-forward, but there are a few requirements you’ll need
+Installing Open Lipa Na Mpesa is easy and straight-forward, but there are a few requirements you’ll need
 to make sure your system has before you start.
 
 ## Requirements
@@ -165,11 +165,11 @@ First run the command `npm test` on your terminal and see if everything is all g
 ```bash
 $ npm start
 
-> project-mulla@0.1.1 start ../project-mulla
+> openlipanampesa@0.1.1 start ../project-mulla
 > node index.js
 
 Your secret session key is: 5f06b1f1-1bff-470d-8198-9ca2f18919c5
-Express server listening on 8080, in development mode
+Express server listening on 9000, in development mode
 ```
 
 ## Do a test run
