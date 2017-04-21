@@ -7,10 +7,10 @@
 
 > __PLEASE NOTE: Mediates only C2B portion for now.__
 
-<p class="lead"><strong>Project Mulla is a MPESA API RESTful mediator</strong>. It lets you make familiar HTTP REST requests, <strong>transforming your requests</strong> to the fiddling dreaded SOAP/XML requests that the Safaricom MPESA G2 API only understands. It then communicates with the MPESA API gateway, transforming all SOAP responses from the SAG to <strong>RESTful JSON responses</strong> that you then consume effortlessly.</p>
+<p class="lead"><strong>Open Lipa na Mpesa is a MPESA API RESTful mediator developed using node js and express js.</strong>. It lets you make familiar HTTP REST requests, <strong>transforming your requests</strong> to the fiddling dreaded SOAP/XML requests that the Safaricom MPESA G2 API only understands. It then communicates with the MPESA API gateway, transforming all SOAP responses from the SAG to <strong>RESTful JSON responses</strong> that you then consume effortlessly.</p>
 <blockquote>In short, it’ll deal with all of the SOAP shenanigans while you REST. Everybody wins!</blockquote>
 
-The aim of **Project Mulla** is to create a REST API middleman that interfaces with the **MPESA G2 API** for you.
+The aim of **Open Lipa Na Mpesa** is to create a REST API middleman that interfaces with the **MPESA G2 API** for you.
 
 ### Yes We Know! SOAP! Yuck!
 
@@ -24,14 +24,14 @@ This initial step is to tell the SAG to initialise a payment transaction for you
 initialisation, you then make another request to the SAG as a confirmation signaling the SAG to
 process the payment request.
 
-Assuming __OPEN Mulla__ is now your mediator, you'd now make a __POST__ request to
-__OPEN Mulla__. _Not the Safaricom Access Gateway_.
+Assuming __OPEN lipa na Mpesa__ is now your mediator, you'd now make a __POST__ request to
+__OPEN lipa na Mpesa__. _Not the Safaricom Access Gateway_.
 
 See below how you'd make this initial request:
 
 ### Initiate Payment Request:
 
-__`POST`__ __`https://project-mulla-companyname.herokuapp.com/api/v1/payment/request`__
+__`POST`__ __`https://project-mulla-yourcompanyname.herokuapp.com/api/v1/payment/request`__
 
 _Body Parameters_:
 
@@ -47,7 +47,7 @@ UUID is generated for each respectively.
 
 ```bash
 $ curl -i -X POST \
---url http://project-mulla-companyname.herokuapp.com/api/v1/payment/request \
+--url http://project-mulla-yourcompanyname.herokuapp.com/api/v1/payment/request \
 --data 'phoneNumber=254723000000' \
 --data 'totalAmount=45.00' \
 --data 'clientName="Eugene Mutai"' \
@@ -116,10 +116,10 @@ Best way to install Project Mulla is to clone it from Github
 $ git clone https://github.com/menty44/project-mulla.git
 ```
 
-**After cloning, get into your cloned Project Mulla's directory/folder**
+**After cloning, get into your cloned OPEN lipa na Mpesa's directory/folder**
 
 ```bash
-$ cd project-mulla
+$ cd openlipanampesa
 ```
 
 **Install all of the projects dependencies with:**
@@ -131,7 +131,7 @@ $ npm install
 __Create `app.yaml` configurations file__
 
 The last but not the least step is to create a `app.yaml` file with your configurations in the root
-directory of `project-mulla`.
+directory of `openlipanampesa`.
 
 This is the same folder directory where `index.js` can be found.
 
@@ -178,20 +178,20 @@ Now make a test run using **CURL**:
 
 ```bash
 $ curl -i -X POST \
-  --url http://localhost:8080/api/v1/payment/request \
+  --url http://localhost:9000/api/v1/payment/request \
   --data 'phoneNumber=254723000000' \
   --data 'totalAmount=10.00' \
-  --data 'clientName="Eugene Mutai"' \
+  --data 'clientName="Fredrick Oluoch"' \
   --data 'clientLocation=Kilimani' \
 ```
 
 Or if you have [httpie](https://github.com/jkbrzt/httpie) installed:
 
 ```bash
-$ http POST localhost:8080/api/v1/payment/request \
+$ http POST localhost:9000/api/v1/payment/request \
   phoneNumber=254723000000 \
   totalAmount=10.00 \
-  clientName='Eugene Mutai' \
+  clientName='Fredrick Oluoch' \
   clientLocation='Kilimani'
 ```
 
