@@ -1,7 +1,7 @@
 [![Coverage Status](https://coveralls.io/repos/github/kn9ts/project-mulla/badge.svg?branch=master)](https://coveralls.io/github/kn9ts/project-mulla?branch=master)
 [![Build Status](https://semaphoreci.com/api/v1/kn9ts/project-mulla/branches/master/badge.svg)](https://semaphoreci.com/kn9ts/project-mulla)
 
-![](http://res.cloudinary.com/dpmk2cnpi/image/upload/v1463934821/banner_vj7z5u.png)
+![](http://blaqueyard.com/openlipanampesa/open.jpg)
 
 > __What MPESA G2 API should have been in the 21st century.__
 
@@ -108,12 +108,12 @@ $ sudo npm update -g npm
 
 ## Install through Github
 
-Best way to install Project Mulla is to clone it from Github
+Best way to install **Open Lipa na Mpesa** is to clone it from Github
 
 **To clone/download the boilerplate**
 
 ```bash
-$ git clone https://github.com/menty44/project-mulla.git
+$ git clone https://github.com/menty44/openlipanampesa.git
 ```
 
 **After cloning, get into your cloned OPEN lipa na Mpesa's directory/folder**
