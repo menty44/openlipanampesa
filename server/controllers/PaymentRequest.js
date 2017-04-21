@@ -70,7 +70,7 @@ class PaymentRequest {
       delete paymentDetails[key];
     }
 
-    // make the payment requets and process response
+    // make the payment requests and process response
     return request.post()
       .then(response => res.status(200).json({
         response: Object.assign({}, response, returnThesePaymentDetails),

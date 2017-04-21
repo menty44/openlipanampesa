@@ -79,7 +79,7 @@ app.use((err, req, res, next) => {
   return res.status(err.statusCode || 500).json();
 });
 
-const server = app.listen(process.env.PORT || 8080, () => {
+const server = app.listen(process.env.PORT || 9000, () => {
   console.log('Your secret session key is: ' + process.env.SESSION_SECRET_KEY);
   console.log('Express server listening on %d, in %s' +
     ' mode', server.address().port, app.get('env'));

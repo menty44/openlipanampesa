@@ -24,8 +24,8 @@ This initial step is to tell the SAG to initialise a payment transaction for you
 initialisation, you then make another request to the SAG as a confirmation signaling the SAG to
 process the payment request.
 
-Assuming __Project Mulla__ is now your mediator, you'd now make a __POST__ request to
-__Project Mulla__. _Not the Safaricom Access Gateway_.
+Assuming __OPEN Mulla__ is now your mediator, you'd now make a __POST__ request to
+__OPEN Mulla__. _Not the Safaricom Access Gateway_.
 
 See below how you'd make this initial request:
 
@@ -113,7 +113,7 @@ Best way to install Project Mulla is to clone it from Github
 **To clone/download the boilerplate**
 
 ```bash
-$ git clone https://github.com/kn9ts/project-mulla.git
+$ git clone https://github.com/menty44/project-mulla.git
 ```
 
 **After cloning, get into your cloned Project Mulla's directory/folder**
